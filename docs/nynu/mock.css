@@ -10,8 +10,8 @@ html {
   overflow: hidden;
 }
 
+/* Preload Images
 body:after {
-  /* Preload Images */
   content: url("assets/img/p1.png")
            url("assets/img/p2.png") 
            url("assets/img/p3.png")
@@ -48,6 +48,7 @@ body:after {
            url("assets/img/p31.png")
            url("assets/img/p32.png");
 }
+*/
 
 .app-container {
   /* width: 100%; */
