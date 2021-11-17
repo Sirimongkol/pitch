@@ -1,0 +1,131 @@
+body * {
+  font-family: "Sarabun", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f1bf !important;
+  overflow: hidden;
+}
+
+.app-container {
+  /* width: 100%; */
+  height: 100vh;
+  position: relative;
+}
+
+.app-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-pBase,
+#app-p1,
+#app-p2,
+#app-p3,
+#app-p4,
+#app-p5,
+#app-p6,
+#app-p7,
+#app-p8-yes,
+#app-p8-no,
+#app-p9,
+#app-p10 {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+
+#app-p0 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#app-p1 {
+  background-image: url("assets/img/p1.png");
+}
+
+#app-p1-txtName {
+  text-align: center;
+  position: relative;
+  top: 55%;
+  left: 25%;
+  width: 50vw;
+  height: 5%;
+  background: transparent;
+  border: none;
+}
+
+#app-p1-txtAge {
+  text-align: center;
+  position: relative;
+  top: 61.75%;
+  left: 25%;
+  width: 50vw;
+  height: 5%;
+  background: transparent;
+  border: none;
+}
+
+#app-p1-btn {
+  position: relative;
+  top: 65%;
+  left: 45%;
+  margin: 0 auto;
+}
+
+#app-p2 {
+  background-image: url("assets/img/p2.png");
+}
+
+#app-p3 {
+  background-image: url("assets/img/p3.png");
+}
+
+#app-p4 {
+  background-image: url("assets/img/p4.png");
+}
+
+#app-p5 {
+  background-image: url("assets/img/p5.png");
+}
+
+#app-p6 {
+  background-image: url("assets/img/p6.png");
+}
+
+#app-p7 {
+  background-image: url("assets/img/p7.png");
+}
+
+.app-p7-btn {
+  position: relative;
+  top: 85%;
+  left: 45%;
+}
+
+#app-p8-yes {
+  background-image: url("assets/img/p8-yes.png");
+}
+
+#app-p8-no {
+  background-image: url("assets/img/p8-no.png");
+}
+
+#app-p9 {
+  background-image: url("assets/img/p9.png");
+}
+
+#app-p10 {
+  background-image: url("assets/img/p10.png");
+}
