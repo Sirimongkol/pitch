@@ -35,7 +35,31 @@ html {
 #app-p8-yes,
 #app-p8-no,
 #app-p9,
-#app-p10 {
+#app-p10,
+#app-p11,
+#app-p12,
+#app-p13,
+#app-p14,
+#app-p15,
+#app-p16,
+#app-p17,
+#app-p18-happy,
+#app-p18-unhappy,
+#app-p18-fine,
+#app-p19,
+#app-p20,
+#app-p21,
+#app-p22,
+#app-p23,
+#app-p24,
+#app-p25,
+#app-p26,
+#app-p27,
+#app-p28,
+#app-p29,
+#app-p30,
+#app-p31,
+#app-p32 {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,4 +152,102 @@ html {
 
 #app-p10 {
   background-image: url("assets/img/p10.png");
+}
+
+#app-p11 {
+  background-image: url("assets/img/p11.png");
+}
+
+#app-p12 {
+  background-image: url("assets/img/p12.png");
+}
+#app-p13 {
+  background-image: url("assets/img/p13.png");
+}
+#app-p14 {
+  background-image: url("assets/img/p14.png");
+}
+#app-p15 {
+  background-image: url("assets/img/p15.png");
+}
+#app-p16 {
+  background-image: url("assets/img/p16.png");
+}
+
+#app-p17 {
+  background-image: url("assets/img/p17.png");
+}
+
+.app-p17-btn {
+  position: relative;
+  top: 82%;
+  left: 35%;
+}
+
+#app-p18-happy {
+  background-image: url("assets/img/p18-happy.png");
+}
+
+#app-p18-unhappy {
+  background-image: url("assets/img/p18-unhappy.png");
+}
+
+#app-p18-fine {
+  background-image: url("assets/img/p18-fine.png");
+}
+
+#app-p19 {
+  background-image: url("assets/img/p19.png");
+}
+
+#app-p20 {
+  background-image: url("assets/img/p20.png");
+}
+
+#app-p21 {
+  background-image: url("assets/img/p21.png");
+}
+
+#app-p22 {
+  background-image: url("assets/img/p22.png");
+}
+
+#app-p23 {
+  background-image: url("assets/img/p23.png");
+}
+
+#app-p24 {
+  background-image: url("assets/img/p24.png");
+}
+
+#app-p25 {
+  background-image: url("assets/img/p25.png");
+}
+
+#app-p26 {
+  background-image: url("assets/img/p26.png");
+}
+
+#app-p27 {
+  background-image: url("assets/img/p27.png");
+}
+
+#app-p28 {
+  background-image: url("assets/img/p28.png");
+}
+
+#app-p29 {
+  background-image: url("assets/img/p29.png");
+}
+
+#app-p30 {
+  background-image: url("assets/img/p30.png");
+}
+
+#app-p31 {
+  background-image: url("assets/img/p31.png");
+}
+
+#app-p32 {
+  background-image: url("assets/img/p32.png");
 }

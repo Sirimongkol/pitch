@@ -123,6 +123,170 @@
       id="app-p10"
     ></div>
 
+    <!-- P11 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p11"
+    ></div>
+
+    <!-- P12 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p12"
+    ></div>
+
+    <!-- P13 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p13"
+    ></div>
+
+    <!-- P14 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p14"
+    ></div>
+
+    <!-- P15 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p15"
+    ></div>
+
+    <!-- P16 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p16"
+    ></div>
+
+    <!-- P17 -->
+    <div class="app-container animate__animated animate__fadeIn" id="app-p17">
+      <button class="btn btn-outline-success app-p17-btn" id="app-p17-btnHappy">
+        มีความสุข
+      </button>
+      <button
+        class="btn btn-outline-danger app-p17-btn"
+        id="app-p17-btnUnhappy"
+      >
+        ไม่มีความสุข
+      </button>
+      <button
+        class="btn btn-outline-secondary app-p17-btn"
+        id="app-p17-btnFine"
+      >
+        เฉย ๆ
+      </button>
+    </div>
+
+    <!-- P18 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p18-happy"
+    ></div>
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p18-unhappy"
+    ></div>
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p18-fine"
+    ></div>
+
+    <!-- P19 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p19"
+    ></div>
+
+    <!-- P20 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p20"
+    ></div>
+
+    <!-- P21 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p21"
+    ></div>
+
+    <!-- P22 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p22"
+    ></div>
+
+    <!-- P23 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p23"
+    ></div>
+
+    <!-- P24 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p24"
+    ></div>
+
+    <!-- P25 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p25"
+    ></div>
+
+    <!-- P26 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p26"
+    ></div>
+
+    <!-- P27 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p27"
+    ></div>
+
+    <!-- P28 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p28"
+    ></div>
+
+    <!-- P29 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p29"
+    ></div>
+
+    <!-- P30 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p30"
+    ></div>
+
+    <!-- P31 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p31"
+    ></div>
+
+    <!-- P32 -->
+    <div
+      class="app-container animate__animated animate__fadeIn"
+      id="app-p32"
+    ></div>
+
+    <!-- End Page -->
+    <div class="app-container animate__animated animate__fadeIn" id="_app-p-end">
+      <button
+        class="btn btn-outline-success btn-lg"
+        id="app-p0"
+        onclick="window.location.reload();"
+      >
+        เล่นอีกครั้ง
+      </button>
+    </div>
+
     <!-- JavaScript -->
     <script>
       function play_bgm() {
@@ -136,35 +300,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
+        // P0
         $("#app-p0").click(function () {
           $("#_app-p0").hide();
           $("#app-p1").show();
         });
+
+        // P1
         $("#app-p1-btn").click(function () {
           // $("#app-p1").css({"background-image": "url('assets/img/p2.png')"});
           $("#app-p1").hide();
           $("#app-p2").show();
         });
-        $("#app-p2").click(function () {
-          $(this).hide();
-          $("#app-p3").show();
-        });
-        $("#app-p3").click(function () {
-          $(this).hide();
-          $("#app-p4").show();
-        });
-        $("#app-p4").click(function () {
-          $(this).hide();
-          $("#app-p5").show();
-        });
-        $("#app-p5").click(function () {
-          $(this).hide();
-          $("#app-p6").show();
-        });
-        $("#app-p6").click(function () {
-          $(this).hide();
-          $("#app-p7").show();
-        });
+
+        // P2 - P6
+        next_page(2, 6);
+
+        // P7
         $("#app-p7-btnY").click(function () {
           $("#app-p7").hide();
           $("#app-p8-yes").show();
@@ -173,18 +325,54 @@
           $("#app-p7").hide();
           $("#app-p8-no").show();
         });
+
+        // P8
         $("#app-p8-yes, #app-p8-no").click(function () {
           $(this).hide();
           $("#app-p9").show();
         });
-        $("#app-p9").click(function () {
-          $(this).hide();
-          $("#app-p10").show();
+
+        // P9 - P16
+        next_page(9, 16);
+
+        // P17
+        $("#app-p17-btnHappy").click(function () {
+          $("#app-p17").hide();
+          $("#app-p18-happy").show();
         });
-        $("#app-p10").click(function () {
-          $(this).hide();
-          $("#app-p11").show();
+        $("#app-p17-btnUnhappy").click(function () {
+          $("#app-p17").hide();
+          $("#app-p18-unhappy").show();
         });
+        $("#app-p17-btnFine").click(function () {
+          $("#app-p17").hide();
+          $("#app-p18-fine").show();
+        });
+
+        // P18
+        $("#app-p18-happy, #app-p18-unhappy, #app-p18-fine").click(function () {
+          $(this).hide();
+          $("#app-p19").show();
+        });
+
+        // P19 - P31
+        next_page(19, 31);
+
+        // P32
+        $("#app-p32").click(function () {
+          $("#app-p32").hide();
+          $("#_app-p-end").hide().fadeIn();
+        });
+
+        // For-loop next page function
+        function next_page(start, end) {
+          for (let i = start; i <= end; i++) {
+            $("#app-p" + i).click(function () {
+              $(this).hide();
+              $("#app-p" + (i + 1)).show();
+            });
+          }
+        }
       });
     </script>
   </body>
