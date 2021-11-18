@@ -142,10 +142,10 @@ body:after {
 }
 
 #app-p1-btn {
-  position: relative;
-  top: 65%;
-  left: 45%;
-  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #app-p2 {
@@ -172,10 +172,19 @@ body:after {
   background-image: url("assets/img/p7.png");
 }
 
-.app-p7-btn {
-  position: relative;
+.app-p7-btn-1,
+.app-p7-btn-2 {
+  position: absolute;
   top: 85%;
-  left: 45%;
+  left: 50%;
+}
+
+.app-p7-btn-1 {
+  transform: translate(-60px, -50%);
+}
+
+.app-p7-btn-2 {
+  transform: translate(10px, -50%);
 }
 
 #app-p8-yes {
@@ -218,10 +227,24 @@ body:after {
   background-image: url("assets/img/p17.png");
 }
 
-.app-p17-btn {
-  position: relative;
-  top: 82%;
-  left: 35%;
+.app-p17-btn-1,
+.app-p17-btn-2,
+.app-p17-btn-3 {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+}
+
+.app-p17-btn-1 {
+  transform: translate(-130px, -50%);
+}
+
+.app-p17-btn-2 {
+  transform: translate(-35px, -50%);
+}
+
+.app-p17-btn-3 {
+  transform: translate(75px, -50%);
 }
 
 #app-p18-happy {
