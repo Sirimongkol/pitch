@@ -3,10 +3,7 @@
   <head>
     <title>New year New you | Mockup</title>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="The mockup of New year New you Exhibition"
-    />
+    <meta name="description" content="The mockup of Jaiful Exhibition" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -36,6 +33,14 @@
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
 
     <!-- Preload/fetch assets -->
@@ -225,7 +230,7 @@
         id="app-p0"
         onclick="play_bgm()"
       >
-        คลิกเพื่อเริ่มต้น
+        <i class="far fa-play-circle"></i> เริ่มต้น
       </button>
     </div>
 
@@ -240,7 +245,7 @@
       <input type="text" id="app-p1-txtAge" />
       <br />
       <button class="btn btn-outline-success" id="app-p1-btn" onclick="">
-        ยืนยัน
+        <i class="far fa-check-circle"></i> ยืนยัน
       </button>
       <!-- 
       <div class="app-text text-dark">
@@ -281,12 +286,12 @@
 
     <!-- P7 -->
     <div class="app-container animate__animated animate__fadeIn" id="app-p7">
-      <div class="app-p7-btn-1">
-        <button class="btn btn-outline-success" id="app-p7-btnY">จำได้</button>
-      </div>
-      <div class="app-p7-btn-2">
+      <div class="app-p7-btn">
+        <button class="btn btn-outline-success" id="app-p7-btnY">
+          <i class="far fa-check-circle"></i> จำได้
+        </button>
         <button class="btn btn-outline-danger" id="app-p7-btnN">
-          จำไม่ได้
+          <i class="far fa-times-circle"></i> จำไม่ได้
         </button>
       </div>
     </div>
@@ -351,24 +356,26 @@
 
     <!-- P17 -->
     <div class="app-container animate__animated animate__fadeIn" id="app-p17">
-      <button
-        class="btn btn-outline-success app-p17-btn-1"
-        id="app-p17-btnHappy"
-      >
-        มีความสุข
-      </button>
-      <button
-        class="btn btn-outline-danger app-p17-btn-2"
-        id="app-p17-btnUnhappy"
-      >
-        ไม่มีความสุข
-      </button>
-      <button
-        class="btn btn-outline-secondary app-p17-btn-3"
-        id="app-p17-btnFine"
-      >
-        เฉย ๆ
-      </button>
+      <div class="app-p17-btn">
+        <button
+          class="btn btn-outline-success app-p17-btn-1"
+          id="app-p17-btnHappy"
+        >
+          <i class="far fa-smile-beam"></i>
+        </button>
+        <button
+          class="btn btn-outline-danger app-p17-btn-2"
+          id="app-p17-btnUnhappy"
+        >
+          <i class="far fa-frown"></i>
+        </button>
+        <button
+          class="btn btn-outline-secondary app-p17-btn-3"
+          id="app-p17-btnFine"
+        >
+          <i class="far fa-meh"></i>
+        </button>
+      </div>
     </div>
 
     <!-- P18 -->
@@ -474,13 +481,20 @@
       class="app-container animate__animated animate__fadeIn"
       id="_app-p-end"
     >
-      <button
-        class="btn btn-outline-success btn-lg"
-        id="app-p0"
-        onclick="window.location.reload();"
-      >
-        เล่นอีกครั้ง
-      </button>
+      <div id="app-p0">
+        <button
+          class="btn btn-outline-success btn-lg"
+          onclick="window.location.reload();"
+        >
+          <i class="fas fa-redo-alt"></i> เล่นอีกครั้ง
+        </button>
+        <button
+          class="btn btn-outline-primary btn-lg mt-2 mt-sm-0"
+          onclick="window.open('https://bmes2oj3hr0.typeform.com/to/FbqcOBYj','_blank')"
+        >
+          <i class="fab fa-wpforms"></i> แบบสอบถาม
+        </button>
+      </div>
     </div>
 
     <!-- jQuery -->
