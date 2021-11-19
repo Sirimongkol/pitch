@@ -8,7 +8,7 @@ function play_bgm() {
 var mtgl = false;
 function mute_toggle() {
   // mtgl ? console.log("on") : console.log("off");
-  mtgl ? audio.volume = 0.5 : audio.volume = 0;
+  mtgl ? (audio.volume = 0.5) : (audio.volume = 0);
   mtgl = !mtgl;
 }
 document.addEventListener("keydown", function (e) {
