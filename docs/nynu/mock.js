@@ -81,3 +81,29 @@ $(document).ready(function () {
     }
   }
 });
+
+// Arrow key pagination
+$(document).keydown(function (e) {
+  var currentPid = $("div:visible").prop("id");
+  var pNum = parseInt(currentPid.split("-")[1].substr(1));
+  var nextPid = "app-p" + (pNum + 1);
+  var previousPid = "app-p" + (pNum - 1);
+  if (!isNaN(pNum)) {
+    switch (e.which) {
+      case 37: //left arrow key
+      case 40: //bottom arrow key
+        if (pNum > 1 && pNum <= 33) {
+          $("#" + currentPid).hide();
+          $("#" + previousPid).show();
+        }
+        break;
+      case 38: //up arrow key
+      case 39: //right arrow key
+        if (pNum > 0 && pNum != 7 && pNum != 17) {
+          $("#" + currentPid).hide();
+          $("#" + nextPid).show();
+        }
+        break;
+    }
+  }
+});
