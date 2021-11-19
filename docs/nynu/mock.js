@@ -14,7 +14,11 @@ function mute_toggle() {
   mtgl = !mtgl;
 }
 document.addEventListener("keydown", function (e) {
-  if (e.code === "KeyM") mute_toggle();
+  if (
+    e.code === "KeyM" &&
+    !/INPUT|TEXTAREA|SELECT|BUTTON/.test(e.target.nodeName)
+  )
+    mute_toggle();
 });
 
 // jQuery
@@ -100,7 +104,7 @@ $(document).keydown(function (e) {
   var pNum = parseInt(currentPid.split("-")[1].substr(1));
   var nextPid = "app-p" + (pNum + 1);
   var previousPid = "app-p" + (pNum - 1);
-  if (!isNaN(pNum)) {
+  if (!isNaN(pNum) && e.target.nodeName !== "INPUT") {
     switch (e.which) {
       case 37: //left arrow key
       case 40: //bottom arrow key
