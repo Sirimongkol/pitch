@@ -98,7 +98,7 @@ $(document).ready(function () {
   }
 });
 
-// Arrow key pagination
+// Arrow keys pagination
 $(document).keydown(function (e) {
   var currentPid = $("div:visible").prop("id");
   var pNum = parseInt(currentPid.split("-")[1].substr(1));
