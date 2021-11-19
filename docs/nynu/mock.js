@@ -16,7 +16,7 @@ function mute_toggle() {
 document.addEventListener("keydown", function (e) {
   if (
     e.code === "KeyM" &&
-    !/INPUT|TEXTAREA|SELECT|BUTTON/.test(e.target.nodeName)
+    !/INPUT|TEXTAREA/.test(e.target.nodeName)
   )
     mute_toggle();
 });
