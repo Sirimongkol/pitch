@@ -225,13 +225,27 @@
   <body>
     <!-- P0 -->
     <div class="app-container animate__animated animate__zoomIn" id="_app-p0">
-      <button
-        class="btn btn-outline-success btn-lg"
-        id="app-p0"
-        onclick="play_bgm()"
-      >
-        <i class="far fa-play-circle"></i> เริ่มต้น
-      </button>
+      <div id="app-p0">
+        <button
+          class="btn btn-outline-success btn-lg"
+          id="app-p0-btn"
+          onclick="play_bgm()"
+        >
+          <i class="far fa-play-circle"></i> เริ่มต้น
+        </button>
+        <br />
+        <div class="p-3 small animate__animated animate__fadeInUp animate__delay-1s">
+          <span class="badge bg-secondary"
+            ><i class="fas fa-arrow-left"></i
+          ></span>
+          <span class="badge bg-secondary"
+            ><i class="fas fa-arrow-right"></i
+          ></span>
+          เปลี่ยนหน้า<br />
+          <span class="badge bg-secondary">M</span> เปิด/ปิดเพลง
+          <i class="fas fa-music"></i>
+        </div>
+      </div>
     </div>
 
     <audio loop id="bgm">
@@ -355,7 +369,10 @@
     ></div>
 
     <!-- P17 -->
-    <div class="app-container animate__animated animate__rotateInUpLeft" id="app-p17">
+    <div
+      class="app-container animate__animated animate__rotateInUpLeft"
+      id="app-p17"
+    >
       <div class="app-p17-btn">
         <button
           class="btn btn-outline-success app-p17-btn-1"

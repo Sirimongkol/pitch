@@ -1,14 +1,24 @@
 // JavaScript
+var audio = document.getElementById("bgm");
 function play_bgm() {
-  var audio = document.getElementById("bgm");
   audio.volume = 0.5;
   audio.play();
 }
 
+var mtgl = false;
+function mute_toggle() {
+  // mtgl ? console.log("on") : console.log("off");
+  mtgl ? audio.volume = 0.5 : audio.volume = 0;
+  mtgl = !mtgl;
+}
+document.addEventListener("keydown", function (e) {
+  if (e.key === "m") mute_toggle();
+});
+
 // jQuery
 $(document).ready(function () {
   // P0
-  $("#app-p0").click(function () {
+  $("#app-p0-btn").click(function () {
     $("#_app-p0").hide();
     $("#app-p1").show();
   });
