@@ -294,3 +294,15 @@ body:after {
 #app-p32 {
   background-image: url("assets/img/p32.png");
 }
+
+#app-p-end {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#_app-p-end {
+  display: none;
+}
