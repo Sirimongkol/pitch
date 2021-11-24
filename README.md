@@ -1,5 +1,5 @@
 # pitch
 *Coming soon*
 
-## Link
-- [Jaiful - New year New you Exhibition - Mockup](https://sirimongkol.github.io/pitch/nynu/mock.html)
+## Mock
+- [Jaiful Exhibition - New year New you](https://sirimongkol.github.io/pitch/nynu/mock.html)
